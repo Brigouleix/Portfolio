@@ -9,7 +9,7 @@
 body {
     font-family: 'Helvetica Neue', Arial, sans-serif;
     line-height: 1.6;
-    background-color: #f9f9f9;
+    background-color: #3a5e27cc;
     color: #333;
     padding: 20px;
 }
@@ -41,8 +41,13 @@ header {
 
 /* Main section styling */
 main {
-    max-width: 800px;
+    max-width: 90%;
     margin: 0 auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: center;
+    background-color: #5fbf66;
 }
 
 /* Section styling */
@@ -54,6 +59,13 @@ h2 {
     font-size: 1.8em;
     margin-bottom: 20px;
     color: #444;
+}
+
+.skills-icon {
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
+    margin-right: 8px;
 }
 
 /* Projects section */
@@ -80,18 +92,29 @@ h2 {
 }
 
 /* Skills section */
+
+#skills img {
+    height: 1em; 
+    width: auto; 
+}
+
+
 #skills ul {
     list-style: none;
     padding: 0;
 }
 
 #skills ul li {
-    background-color: #5fbf6654;
+    background-color: #3a5e27cc;
     display: inline-block;
     margin: 5px;
     padding: 10px 20px;
     border-radius: 20px;
     font-size: 1em;
+}
+
+#skills ul li i {
+    margin-right: 8px;
 }
 
 /* Footer styling */
