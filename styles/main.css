@@ -144,3 +144,32 @@ footer {
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
+
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.project-card {
+    flex: 1 1 calc(33.333% - 32px); /* Ajuster selon le nombre de colonnes souhaité */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 16px;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 8px;
+    text-decoration: none; /* Enlever la sous-ligne des liens */
+    color: inherit; /* Conserver la couleur du texte */
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.project-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
