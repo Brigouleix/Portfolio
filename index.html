@@ -5,10 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portofoglio</title>
     <link rel="stylesheet" href="styles/main.css">
-    
 </head>
 <body>
-    
     <header>
         <div class="header-content">
             <img src="images/profile.png" alt="Photo de profil" class="profile-pic">
@@ -16,31 +14,66 @@
                 <h1>Antoine Brigouleix</h1>
                 <p>Développeur Web Fullstack</p>
             </div>
+            <ul>
+                <li><a href="#about">À propos</a></li>
+                <li><a href="#skills">Compétences</a></li>
+                <li><a href="#projects">Projets Réalisés</a></li>
+                <li><a href="#services">Champs de compétences</a></li>
+            </ul>
         </div>
     </header>
     <main>
         <section id="about">
             <h2>À propos de moi</h2>
             <p>Développeur web passionné avec plus de X années d'expérience...</p>
+            <a href="cv/cv-dev-web-fullstack-brigouleix.pdf" target="_blank" download class="btn-download-cv">Télécharger mon CV</a>
         </section>
+        
         <section id="projects">
             <h2>Projets Réalisés</h2>
             <div class="projects-container">
-                <div class="project-card">Projet 1</div>
+                <a href="https://brigouleix.github.io/FrontEnd/" class="project-card">
+                    <img src="images/sophie-bluel-2.webp" alt="Projet 3">
+                    Projet 2
+                </a>
                 <a href="https://brigouleix.github.io/Nina-Carducci/" class="project-card">
                     <img src="images/carducci.png" alt="Projet 2">
-                    Projet 2
+                    Carducci
+                    <ul>
+                        <li>Débogage & SEO <img src="images/seo.png" alt="Icône de SEO" class="icones"></li>
+                    </ul>
+                </a>
+                <a href="https://brigouleix.github.io/FrontEnd/" class="project-card">
+                    <img src="images/sophie-bluel-2.webp" alt="Projet 3">
+                    Bluel
+                    <ul>
+                        <li>HTML <img src="images/html.png" alt="Icône de HTML5" class="icones"></li>
+                        <li>CSS <img src="images/css.png" alt="Icône de CSS"></li>
+                        <li>JavaScript <img src="images/js.png" alt="Icône de JavaScript" class="icones"></li>
+                        <li>Node.js <img src="images/node.png" alt="Icône de Node.JS" class="icones"></li>
+                    </ul>
+                </a>
+                <a href="https://brigouleix.github.io/FrontEnd/" class="project-card">
+                    <img src="images/booki.png" alt="Projet 3">
+                    Booki
+                    <ul>
+                        <li>HTML <img src="images/html.png" alt="Icône de HTML5" class="icones"></li>
+                        <li>CSS <img src="images/css.png" alt="Icône de CSS" class="icones"></li>
+                    </ul>
+                </a>
+                <a href="https://brigouleix.github.io/FrontEnd/" class="project-card">
+                    <img src="images/qwenta.png" alt="Projet 3">
+                    Qwenta
+                    <ul>
+                        <li>Planification de projet <img src="images/kanban.png" alt="Icône de Kanban" class="icones"></li>
+                    </ul>
                 </a>
                 <a href="https://brigouleix.github.io/FrontEnd/" class="project-card">
                     <img src="images/bluel.png" alt="Projet 3">
                     Projet 2
                 </a>
-                <div class="project-card">Projet 4</div>
-                <div class="project-card">Projet 5</div>
-                <div class="project-card">Projet 6</div>
             </div>
         </section>
-        
         <section id="skills">
             <h2>
                 Compétences <img src="images/codes.png" alt="Icône de compétences">
@@ -55,10 +88,24 @@
                 <li>Planification de projet <img src="images/kanban.png" alt="Icône de Kanban"></li>
             </ul>
         </section>
-        
+        <section id="services">
+            <h2>Champs de compétences</h2>
+            <div class="cards-competences">
+                <div class="competences">FrontEnd</div>
+                <div class="competences">Backend</div>
+                <div class="competences">Gestion de Projet</div>
+            </div>
+            <div class="CV"></div>
+        </section>
     </main>
     <footer>
         <p>&copy; 2024 Antoine Brigouleix</p>
+        <a href="https://github.com/Brigouleix" target="_blank">
+            <img src="images/github.png" alt="GitHub" class="social-icon">
+        </a>
+        <a href="https://linkedin.com/in/antoine-brigouleix-539644153" target="_blank">
+            <img src="images/linkedin.png" alt="LinkedIn" class="social-icon">
+        </a>
     </footer>
     <script src="scripts/main.js"></script>
 </body>

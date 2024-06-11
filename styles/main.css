@@ -12,24 +12,11 @@ body {
     /*background-color: #3a5e27cc;*/
     color: #333;
     padding: 20px;
-    background: linear-gradient(-45deg, #ac5940a6, #498ccacb, #3a5e27cc, #b2ec65);
-    background-size: 400% 400%;
-    animation: gradient 15s ease infinite;
+
 }
 
 
 
-@keyframes gradient {
-    0% {
-        background-position: 0% 50%;
-    }
-    50% {
-        background-position: 100% 50%;
-    }
-    100% {
-        background-position: 0% 50%;
-    }
-}
 
 /* Header styling */
 header {
@@ -45,6 +32,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
 }
 
 .profile-pic {
@@ -56,15 +44,69 @@ header {
     border: 3px solid #ccc;
 }
 
+
+header ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 10px;
+}
+
+header ul li {
+    margin: 0;
+    background-color: #dbdbdbad;
+    display: inline-block;
+    margin: 5px;
+    padding: 5px 5px;
+    border-radius: 20px;
+    font-size: 1em;
+    border: 1px white solid;
+    
+}
+
+header ul li a {
+    text-decoration: none;
+    color: inherit; /* Assure que le lien a la même couleur que le texte environnant */
+    padding: 10px;
+    transition: color 0.3s;
+}
+
+header ul li a:hover {
+    color: #007BFF; /* Change la couleur au survol, par exemple en bleu */
+}
+
+
 /* Main section styling */
 main {
     max-width: 90%;
     margin: 0 auto;
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     text-align: center;
+    
+}
+
+/* Download button */
+
+.btn-download-cv {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
     background-color: #5fbf6640;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn-download-cv:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px #5fbf6640;
 }
 
 /* Section styling */
@@ -92,6 +134,7 @@ h2 {
     gap: 20px;
 }
 
+
 .project-card {
     background-color: rgba(255, 255, 255, 0.7);
     padding: 20px;
@@ -108,30 +151,43 @@ h2 {
     transform: scale(1.05);
 }
 
-/* Skills section */
+/* #projects section */
 
-#skills img {
+.project-card > img:first-child {
+    width: 100%;
+    height: 80%; /* Hauteur à 60% de la carte */
+    object-fit: cover;
+}
+.project-card ul li > img:first-child {
+    height: 1em;
+}
+
+#projects .icones {
     height: 1em; 
     width: auto; 
 }
 
 
-#skills ul {
+#projects ul {
     list-style: none;
     padding: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
-#skills ul li {
+#projects ul li {
     background-color: #5fbf6640;
     display: inline-block;
     margin: 5px;
-    padding: 10px 20px;
+    padding: 0px 5px;
     border-radius: 20px;
     font-size: 1em;
     border: 1px solid;
 }
 
-#skills ul li i {
+#projects ul li i {
     margin-right: 8px;
 }
 
@@ -143,6 +199,23 @@ footer {
     background-color: #5fbf6640;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    
+}
+
+footer a {
+    text-decoration: none;
+
+}
+.social-icon {
+    width: 30px;
+    height: 30px;
+    margin: 0 10px;
+    transition: transform 0.3s, opacity 0.3s;
+}
+
+.social-icon:hover {
+    transform: scale(1.1);
+    opacity: 0.8;
 }
 
 .projects-container {
@@ -156,11 +229,14 @@ footer {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 16px;
     text-align: center;
-    background-color: #fff;
+    background-color: #dbdbdbad;
     border-radius: 8px;
     text-decoration: none; /* Enlever la sous-ligne des liens */
     color: inherit; /* Conserver la couleur du texte */
     transition: transform 0.2s, box-shadow 0.2s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .project-card:hover {
@@ -168,8 +244,21 @@ footer {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-.project-card img {
-    max-width: 100%;
-    height: auto;
+
+
+.competences {
+
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 16px;
+    text-align: center;
+    background-color: #dbdbdbad;
     border-radius: 8px;
+    text-decoration: none;
+    width: 30%;
+}
+
+.cards-competences {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
