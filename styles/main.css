@@ -93,7 +93,7 @@ main {
     margin-top: 20px;
     padding: 10px 20px;
     font-size: 16px;
-    color: #fff;
+    color: #333;
     background-color: #5fbf6640;
     border: none;
     border-radius: 5px;
@@ -107,6 +107,7 @@ main {
     background-color: #0056b3;
     transform: scale(1.05);
     box-shadow: 0 8px 16px #5fbf6640;
+    color: #fff;
 }
 
 /* Section styling */
@@ -191,6 +192,48 @@ h2 {
     margin-right: 8px;
 }
 
+#projects a p {
+    margin: 20px;
+}
+/* Competences styling */
+
+.cards-competences {
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+}
+
+
+.competences {
+   
+    position: relative;
+    
+    margin-top: 75px; /* Half of the image height to ensure half is outside */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 16px;
+    text-align: center;
+    background-color: #dbdbdbad;
+    border-radius: 8px;
+    text-decoration: none;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.icon-competence {
+    width: 100px; /* Adjust as needed */
+    height: 100px; /* Adjust as needed */
+    border-radius: 50%;
+    position: relative;
+    top: -65px; /* Half of the image height */
+    left: 50%;
+    transform: translateX(-50%);
+    border: 3px solid white; /* Optional: adds a white border for better visibility */
+    box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Optional: adds a shadow */
+}
+
+
 /* Footer styling */
 footer {
     text-align: center;
@@ -246,19 +289,3 @@ footer a {
 
 
 
-.competences {
-
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 16px;
-    text-align: center;
-    background-color: #dbdbdbad;
-    border-radius: 8px;
-    text-decoration: none;
-    width: 30%;
-}
-
-.cards-competences {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
