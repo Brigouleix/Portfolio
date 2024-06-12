@@ -254,11 +254,14 @@ footer a {
     height: 30px;
     margin: 0 10px;
     transition: transform 0.3s, opacity 0.3s;
+    border-radius: 20px;
 }
 
 .social-icon:hover {
     transform: scale(1.1);
     opacity: 0.8;
+    box-shadow: 0 0px 8px #007BFF;
+
 }
 
 .projects-container {
@@ -284,7 +287,8 @@ footer a {
 
 .project-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0px 8px #007BFF;
+    
 }
 
 
