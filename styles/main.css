@@ -249,6 +249,8 @@ footer a {
     text-decoration: none;
 
 }
+
+
 .social-icon {
     width: 30px;
     height: 30px;
@@ -293,3 +295,165 @@ footer a {
 
 
 
+.project-card {
+    flex: 1 1 calc(33.333% - 32px); /* Ajuster selon le nombre de colonnes souhaité */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 16px;
+    background-color: #dbdbdbad;
+    border-radius: 8px;
+    text-decoration: none; /* Enlever la sous-ligne des liens */
+    color: inherit; /* Conserver la couleur du texte */
+    transition: transform 0.2s, box-shadow 0.2s;
+    perspective: 1000px; /* Nécessaire pour l'effet de retournement */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+
+.project-card:hover .card-inner {
+    transform: rotateY(180deg);
+}
+
+.card-front, .card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 8px; /* Pour conserver les coins arrondis */
+}
+
+.card-front {
+    z-index: 2;
+    transform: rotateY(0deg);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.card-back {
+    transform: rotateY(180deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #dbdbdbad;
+    padding: 16px;
+}
+
+.project-card > .card-front img:first-child {
+    width: 100%;
+    height: 80%;
+    object-fit: cover;
+    border-radius: 8px; /* Optionnel : arrondir les coins de l'image */
+}
+
+.card-front ul, .card-back ul {
+    list-style: none;
+    padding: 0;
+}
+
+.card-front li, .card-back li {
+    margin: 8px 0;
+}
+
+.card-front p {
+    margin: 16px 0;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+/* Ajoutez les styles nécessaires pour l'effet de retournement */
+.project-card {
+    flex: 1 1 calc(33.333% - 32px); /* Ajuster selon le nombre de colonnes souhaité */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 16px;
+    text-align: center;
+    background-color: #dbdbdbad;
+    border-radius: 8px;
+    text-decoration: none; /* Enlever la sous-ligne des liens */
+    color: inherit; /* Conserver la couleur du texte */
+    transition: transform 0.2s, box-shadow 0.2s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    perspective: 1000px; /* Nécessaire pour l'effet de retournement */
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0px 8px #007BFF;
+}
+
+.card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+
+.project-card:hover .card-inner {
+    transform: rotateY(180deg);
+}
+
+.card-front, .card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 8px;
+}
+
+.card-front {
+    z-index: 2;
+    transform: rotateY(0deg);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.card-back {
+    transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #dbdbdbad;
+    padding: 16px;
+}
+
+.card-front > img:first-child {
+    width: 100%;
+    height: 80%; /* Hauteur à 80% de la carte */
+    object-fit: cover;
+}
+
+.project-card ul {
+    list-style: none;
+    padding: 0;
+}
+
+.project-card ul li {
+    margin: 8px 0;
+}
+
+.project-card p {
+    margin: 16px 0;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+/* Maintenez les autres styles existants */
