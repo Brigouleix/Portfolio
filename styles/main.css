@@ -207,7 +207,7 @@ h2 {
 .competences {
    
     position: relative;
-    
+    font-size: small;
     margin-top: 75px; /* Half of the image height to ensure half is outside */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 16px;
@@ -215,13 +215,15 @@ h2 {
     background-color: #dbdbdbad;
     border-radius: 8px;
     text-decoration: none;
-    width: 30%;
-    display: flex;
+    width: 24%;
+
     flex-direction: column;
     justify-content: space-around;
 }
 
 .icon-competence {
+    display: flex;
+    padding: 5px;
     width: 100px; /* Adjust as needed */
     height: 100px; /* Adjust as needed */
     border-radius: 50%;
@@ -464,6 +466,34 @@ a {
     font-size: 1.2em;
     font-weight: bold;
 }
+
+/* Hiérarchie des titres */
+h3 {
+    font-size: 1.4em;
+    margin-bottom: 10px;
+    color: #2c3e50; /* plus sombre */
+    font-weight: 700;
+    border-bottom: 2px solid #5fbf66; /* petite ligne décorative */
+    padding-bottom: 5px;
+}
+
+h4 {
+    font-size: 1.1em;
+    margin-top: 12px;
+    margin-bottom: 6px;
+    color: #007BFF; /* bleu pour différencier */
+    font-weight: 600;
+}
+
+/* Mettre en valeur le strong */
+strong {
+    color: #222;
+    font-weight: bold;
+    background-color: #dfffdc; /* vert clair discret */
+    padding: 2px 4px;
+    border-radius: 4px;
+}
+
 
 @media (max-width: 768px) {
     .projects-container {
