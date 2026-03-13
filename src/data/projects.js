@@ -1,0 +1,172 @@
+export const projects = [
+  {
+    id: 'blouge',
+    name: 'Blouge',
+    subtitle: 'Organisateur de voyages collaboratif',
+    description:
+      "Plateforme fullstack d'organisation de voyages en groupe. Création de groupes, proposition de destinations avec géolocalisation, partage de frais (hébergement et transport), système d'invitations par email, commentaires et notations sur les destinations, et album photo partagé. Authentification JWT et envoi d'emails via PHPMailer.",
+    image: null,
+    gradient: 'linear-gradient(135deg, #06b6d4, #3b82f6)',
+    tags: ['React', 'Tailwind CSS', 'PHP', 'MySQL', 'JWT', 'Google Maps API'],
+    siteUrl: null,
+    repoUrl: 'https://github.com/Brigouleix/BlougeCorp',
+    featured: true,
+  },
+  {
+    id: 'maites',
+    name: 'Maites',
+    subtitle: 'Application IA Desktop',
+    description:
+      "Application desktop cross-platform pour gérer une flotte d'agents IA (\"Maites\"). Intègre des modèles LLM en local (llama-cpp), du RAG via LangChain et ChromaDB, ingestion de documents (PDF, Word, EPUB), et une interface riche avec gestion de projets, marketplace d'agents et espaces collaboratifs. Backend Python avec FastAPI et serveur MCP.",
+    image: null,
+    gradient: 'linear-gradient(135deg, #8b5cf6, #ec4899)',
+    tags: ['Flutter', 'Dart', 'Python', 'FastAPI', 'LangChain', 'LLM'],
+    siteUrl: null,
+    repoUrl: null,
+    featured: true,
+  },
+  {
+    id: 'realgeekestate',
+    name: 'ReelGeekEstate',
+    subtitle: "Immobilier virtuel gaming",
+    description:
+      "Marketplace d'immobilier virtuel dédié aux univers de jeux vidéo (Dofus, WoW, FFXIV, Minecraft...). Les joueurs peuvent publier, parcourir et acheter des propriétés virtuelles avec détails, prix, équipements et contact vendeur. Design gaming immersif avec effets néon et thème sombre.",
+    image: null,
+    gradient: 'linear-gradient(135deg, #5D5CDE, #FFD700)',
+    tags: ['React 19', 'JavaScript', 'Tailwind CSS'],
+    siteUrl: null,
+    repoUrl: null,
+    featured: true,
+  },
+  {
+    id: 'geomedia',
+    name: 'GéoMédia Explorer',
+    subtitle: 'Contenus géolocalisés en temps réel',
+    description:
+      "Plateforme interactive de découverte de contenus géolocalisés. Agrège actualités (GNews), tendances sociales (Reddit), flux RSS et événements culturels (OpenAgenda) sur une carte Leaflet interactive. Filtrage par type de contenu et niveau de zoom, géocodage Nominatim, et collecte automatique toutes les 30 minutes.",
+    image: null,
+    gradient: 'linear-gradient(135deg, #10b981, #06b6d4)',
+    tags: ['React', 'Leaflet', 'Flask', 'Python', 'APIs REST'],
+    siteUrl: null,
+    repoUrl: null,
+    featured: true,
+  },
+  {
+    id: 'sophie-bluel',
+    name: 'Sophie Bluel',
+    subtitle: 'Portfolio Architecte',
+    description:
+      "Site portfolio pour une architecte d'intérieur avec interface d'administration. Gestion dynamique des projets via une API REST, filtrage par catégorie et modale d'upload.",
+    image: 'images/sophie-bluel-2.webp',
+    gradient: null,
+    tags: ['HTML', 'CSS', 'JavaScript', 'Node.js'],
+    siteUrl: 'https://sophie-bluel-architect.vercel.app/',
+    repoUrl: null,
+    featured: false,
+  },
+  {
+    id: 'nina-carducci',
+    name: 'Nina Carducci',
+    subtitle: 'Optimisation & SEO',
+    description:
+      "Optimisation SEO et amélioration de l'accessibilité d'un site de photographe. Audit Lighthouse, correction de bugs, amélioration des performances et de l'expérience utilisateur. Un projet centré sur les aspects invisibles mais essentiels du développement web.",
+    image: 'images/carducci.png',
+    gradient: null,
+    tags: ['SEO', 'Accessibilité', 'Performance'],
+    siteUrl: 'https://brigouleix.github.io/Nina-Carducci/',
+    repoUrl: 'https://github.com/Brigouleix/Nina-Carducci',
+    featured: false,
+  },
+  {
+    id: 'kasa',
+    name: 'Kasa',
+    subtitle: 'Application de location',
+    description:
+      "Application React de location immobilière avec navigation dynamique, composants réutilisables (collapse, carousel) et responsive design complet.",
+    image: 'images/kasa.png',
+    gradient: null,
+    tags: ['React', 'JavaScript', 'CSS'],
+    siteUrl: 'https://kasa-one.vercel.app/',
+    repoUrl: null,
+    featured: false,
+  },
+  {
+    id: 'mon-vieux-grimoire',
+    name: 'Mon vieux Grimoire',
+    subtitle: 'Application fullstack',
+    description:
+      "Application fullstack de notation de livres. Développement du back-end avec Express et MongoDB : authentification, CRUD des livres, système de notation et optimisation des images. Un projet formateur pour approfondir le développement serveur.",
+    image: 'images/mon-vieux-grimoire.png',
+    gradient: null,
+    tags: ['React', 'Node.js', 'Express', 'MongoDB'],
+    siteUrl: 'https://mon-vieux-grimoire-geaf.vercel.app/',
+    repoUrl: 'https://github.com/Brigouleix/mon-vieux-grimoire',
+    featured: false,
+  },
+  {
+    id: 'booki',
+    name: 'Booki',
+    subtitle: 'Site de réservation',
+    description:
+      "Intégration responsive d'une maquette Figma pour un site de réservation de vacances. Travail sur le maquettage, les media queries et la fidélité au design.",
+    image: 'images/booki.png',
+    gradient: null,
+    tags: ['HTML', 'CSS', 'Figma'],
+    siteUrl: 'https://brigouleix.github.io/Booki/',
+    repoUrl: null,
+    featured: false,
+  },
+  {
+    id: 'qwenta',
+    name: 'Qwenta',
+    subtitle: 'Planification de projet',
+    description:
+      "Projet de veille technologique et de planification agile. Mise en place d'un tableau Kanban, utilisation de Trello pour la gestion des sprints et des tâches.",
+    image: 'images/qwenta.png',
+    gradient: null,
+    tags: ['Kanban', 'Trello', 'Gestion de projet'],
+    siteUrl: null,
+    repoUrl: null,
+    featured: false,
+  },
+]
+
+export const skills = [
+  {
+    title: 'Front-End',
+    icon: 'images/frontend.png',
+    items: [
+      { label: 'Langages', value: 'HTML, CSS/SCSS, JavaScript' },
+      { label: 'Frameworks', value: 'ReactJS, VueJS, Flutter, React Native' },
+      { label: 'Autres', value: 'Accessibilité, UX/UI, Responsive Design' },
+    ],
+  },
+  {
+    title: 'Back-End',
+    icon: 'images/backend.png',
+    items: [
+      { label: 'Langages', value: 'PHP, Java, C#, Python' },
+      { label: 'Frameworks', value: 'Node.js, ASP.NET, Flask, FastAPI' },
+      { label: 'APIs', value: 'REST, documentation Swagger' },
+      { label: 'Bases de données', value: 'MySQL, MongoDB, SQLite' },
+    ],
+  },
+  {
+    title: 'Gestion de Projet',
+    icon: 'images/projet.png',
+    items: [
+      { label: 'Méthodes', value: 'SCRUM, Kanban' },
+      { label: 'Outils', value: 'Trello, Jira' },
+      { label: 'Optimisation', value: 'Revue de code, Audits Lighthouse, Débogage' },
+    ],
+  },
+  {
+    title: 'Environnements & Outils',
+    icon: 'images/environnement.png',
+    items: [
+      { label: 'IDE', value: 'VS Code, IntelliJ, Android Studio' },
+      { label: 'Versioning', value: 'Git, GitHub' },
+      { label: 'IA & Automatisation', value: 'LangChain, LLM, MCP, Claude' },
+    ],
+  },
+]
