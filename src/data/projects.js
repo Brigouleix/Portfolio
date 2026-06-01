@@ -1,12 +1,18 @@
 export const projects = [
   {
     id: 'blouge',
-    name: 'Blouge',
+    name: 'BlougeCorp',
     subtitle: 'Organisateur de voyages collaboratif',
     description:
       "Plateforme fullstack d'organisation de voyages en groupe. Création de groupes, proposition de destinations avec géolocalisation, partage de frais (hébergement et transport), système d'invitations par email, commentaires et notations sur les destinations, et album photo partagé. Authentification JWT et envoi d'emails via PHPMailer.",
-    image: null,
+    image: 'images/blougecorp/destination.png',
     gradient: 'linear-gradient(135deg, #06b6d4, #3b82f6)',
+    screenshots: [
+      'images/blougecorp/groupes.png',
+      'images/blougecorp/destination-cards.png',
+      'images/blougecorp/roadtrip.png',
+      'images/blougecorp/groupes-dark.png',
+    ],
     tags: ['React', 'Tailwind CSS', 'PHP', 'MySQL', 'JWT', 'Google Maps API'],
     siteUrl: null,
     repoUrl: 'https://github.com/Brigouleix/BlougeCorp',
